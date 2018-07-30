@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>lovePotion</artifactId>
+        <groupId>cn.indispensable.love</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>love-manager-dao</module>
+        <module>love-manager-pojo</module>
+        <module>love-manager-interface</module>
+    </modules>
+    <artifactId>love-manager</artifactId>
+    <description>后台管理系统,暂时先提供登录功能</description>
+    <dependencies>
+        <dependency>
+            <groupId>cn.indispensable.love</groupId>
+            <artifactId>love-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
