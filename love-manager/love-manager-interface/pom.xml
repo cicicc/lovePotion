@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
     <artifactId>love-manager-interface</artifactId>
-    <description>提供service的接口</description>
+    <description>提供service层的接口</description>
     <dependencies>
         <dependency>
             <groupId>cn.indispensable.love</groupId>

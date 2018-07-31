@@ -13,9 +13,11 @@
         <module>love-manager-dao</module>
         <module>love-manager-pojo</module>
         <module>love-manager-interface</module>
+        <module>love-manager-service</module>
+        <module>love-manager-web</module>
     </modules>
     <artifactId>love-manager</artifactId>
-    <description>后台管理系统,暂时先提供登录功能</description>
+    <description>后台管理系统</description>
     <dependencies>
         <dependency>
             <groupId>cn.indispensable.love</groupId>
@@ -23,4 +25,17 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+    <!-- 配置tomcat插件 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <port>8080</port>
+                    <path>/</path>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
